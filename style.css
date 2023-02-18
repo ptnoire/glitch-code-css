@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    
+}
+
+h1 {
+    color: beige;
+    font-family: "Space Mono", monospace;
+    font-size: 3rem;
+}
+
+.navBar {
+    text-align: center;
+}
+
+.word {
+    transition: all .1s ease-out;
+    padding: 15px;
+}
+
+.after {
+    text-shadow: -3px 0 2px #9f0c0c7c, 5px 0 2px #ea4aff7b, 0 3px 2px #00f2ff76, 0 -2px 0 #fff7007a;
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+  @keyframes glitch {
+    0% {
+      transform: skew(0);
+    }
+    20% {
+      transform: skew(6deg);
+    }
+    40% {
+      transform: skew(-6deg);
+      text-shadow: -4px 0 3px #9f0c0c7c, 6px 0 3px #ea4aff7b, 0 2px 1px #00f2ff76, 0 -3px 0 #fff7007a;
+    }
+    60% {
+      transform: skew(0);
+    }
+    80% {
+      transform: skew(-6deg);
+      text-shadow: -6px 0 5px #9f0c0c7c, 8px 0 3px #ea4aff7b, 0 4px 2px #00f2ff76, 0 -5px 0 #fff7007a;
+    }
+    100% {
+      transform: skew(2deg);
+    }
+  }
